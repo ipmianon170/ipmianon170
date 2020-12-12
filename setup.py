@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='interact',
+    name='hm',
     version='0.1',
     packages=setuptools.find_packages(),
     python_requires='>=3.6',
@@ -10,7 +10,7 @@ setuptools.setup(
     ],
     include_package_data=True,
     package_data={
-        'interact': ['*.h5'],
-        'interact': ['*.npy'],
+        'hm': ['*.h5'],
+        'hm': ['*.npy'],
     },
 )

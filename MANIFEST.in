@@ -1,2 +1,2 @@
-include interact/*.h5
-include interact/*.npy
+include hm/*.h5
+include hm/*.npy
