@@ -75,8 +75,7 @@ class HyperMorphInteractiveWindow:
         moved, warped_grid = self.hyperpred(h)
         self.im_ax.set_array(np.rot90(moved, -1))
         self.gr_ax.set_array(np.rot90(warped_grid, -1))
-        self.fig.canvas.draw_idle()
-        plt.show()
+        self.fig.canvas.draw()
 
     def hyperpred(self, hyperparam):
         """
@@ -116,4 +115,3 @@ class HyperMorphInteractiveWindow:
         ax.set_axis_off();
 
         plt.tight_layout()
-        plt.show()
