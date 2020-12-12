@@ -1,7 +1,7 @@
 import pystrum
 import numpy as np
 import matplotlib.pyplot as plt
-import ipywidgets as widgets
+# import ipywidgets as widgets
 import voxelmorph as vxm
 import pkg_resources
 
@@ -72,13 +72,11 @@ class HyperMorphInteractiveWindow:
         """
         interactive update based on hyperparam value
         """
-        # print(h)
         moved, warped_grid = self.hyperpred(h)
-        # import random
-        # r = random.choise([0, -1, 1])
         self.im_ax.set_array(np.rot90(moved, -1))
         self.gr_ax.set_array(np.rot90(warped_grid, -1))
         self.fig.canvas.draw_idle()
+        plt.show()
 
     def hyperpred(self, hyperparam):
         """
@@ -118,3 +116,4 @@ class HyperMorphInteractiveWindow:
         ax.set_axis_off();
 
         plt.tight_layout()
+        plt.show()
