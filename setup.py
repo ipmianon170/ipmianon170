@@ -8,6 +8,7 @@ setuptools.setup(
     install_requires=[
         'voxelmorph',
     ],
+    include_package_data=True,
     package_data={
         'interact': ['*.h5'],
         'interact': ['*.npy'],
