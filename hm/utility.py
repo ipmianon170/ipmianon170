@@ -42,14 +42,6 @@ class HyperMorphInteractiveWindow:
         # initialize figure
         self.init_figure(0.5)
 
-        # # set interaction
-        # ipywidgets.interact(self.update, h=widgets.FloatSlider(
-        #     min=0.0,
-        #     max=1.0,
-        #     step=0.005,
-        #     readout_format='.2f'
-        # ))
-
     def set_image_pairs(self, mvg, fxd):
         """
         sets images to register
